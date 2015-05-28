@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.doubletuan.wing"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+   <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+ 
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/demo_title" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="dac02900a9a9c8450714ccc8d97582e8" />
+
+        <!--
+         在android4.0以上系统中的 Activity加上下面这句，可以支持地图横竖屏切换 
+         android:configChanges="orientation|keyboardHidden|screenSize"
+                               例如：
+         <activity
+            android:name=".basic.BasicMapActivity"
+            android:label="@string/basic_map"
+            android:configChanges="orientation|keyboardHidden|screenSize" /> 
+        -->
+
+        <activity android:name="com.doubletuan.wing.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+             android:name="com.doubletuan.wing.basic.BasicMapActivity"
+            android:label="@string/basic_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.basic.BaseMapFragmentActivity"
+            android:label="@string/basic_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.basic.CameraActivity"
+            android:label="@string/camera_demo"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.doubletuan.wing.basic.HeatMapActivity"
+            android:label="@string/heatmap_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.basic.EventsActivity"
+            android:label="@string/events_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.basic.LayersActivity"
+            android:label="@string/layers_demo"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.doubletuan.wing.basic.PoiClickActivity"
+            android:label="@string/poiclick_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.basic.MapOptionActivity"
+            android:label="@string/mapOption_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.basic.ScreenShotActivity"
+            android:label="@string/screenshot_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.basic.OpenglActivity"
+            android:label="@string/opengl_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.basic.UiSettingsActivity"
+            android:label="@string/uisettings_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.overlay.MarkerActivity"
+            android:label="@string/marker_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.overlay.PolylineActivity"
+            android:label="@string/polyline_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.overlay.ArcActivity"
+            android:label="@string/arc_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.overlay.GroundOverlayActivity"
+            android:label="@string/groundoverlay_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.overlay.PolygonActivity"
+            android:label="@string/polygon_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.overlay.CircleActivity"
+            android:label="@string/circle_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.overlay.NavigateArrowOverlayActivity"
+            android:label="@string/navigatearrow_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.location.LocationSourceActivity"
+            android:label="@string/locationsource_demo"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.doubletuan.wing.location.LocationSensorSourceActivity"
+            android:label="@string/locationSensorGPS_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.location.LocationModeSourceActivity"
+            android:label="@string/locationmodesource_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.location.LocationGPSActivity"
+            android:label="@string/locationGPS_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.location.LocationNetworkActivity"
+            android:label="@string/locationNetwork_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.geocoder.GeocoderActivity"
+            android:label="@string/geocoder_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.route.RouteActivity"
+            android:label="@string/route_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.busline.BuslineActivity"
+            android:label="@string/busline_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.poisearch.PoiKeywordSearchActivity"
+            android:label="@string/poikeywordsearch_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.poisearch.PoiAroundSearchActivity"
+            android:label="@string/poiaroundsearch_demo" 
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.doubletuan.wing.offlinemap.OfflineMapActivity"
+            android:label="@string/offlinemap_demo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.doubletuan.wing.district.DistrictActivity"
+            android:label="@string/district_demo"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
