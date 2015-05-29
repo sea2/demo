@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+    
+      <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="50dip" 
+  			android:id="@+id/title" 
+  			android:background="@drawable/s_search_bg"
+  			android:gravity="center_vertical" 
+  			
+  			 >  
+
+      		
+				
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="@string/circle_member"
+                android:layout_centerInParent="true"
+        		android:textSize="20sp"    		     		        		
+				android:textColor="@color/black_color" /> 	
+				
+          	
+<!--           	<TextView -->
+<!--           	     android:id="@+id/contacts_refresh" -->
+<!--         		android:layout_width="wrap_content"  -->
+<!--         		android:layout_height="wrap_content"  -->
+<!--         		android:text="@string/refresh_contacts" -->
+<!--         		android:layout_centerVertical="true" -->
+<!--         		android:layout_alignParentLeft="true" -->
+<!--         		android:layout_marginLeft="10dip" -->
+<!--         		android:textSize="@dimen/sixteen" -->
+<!-- 				android:textColor="@drawable/text_blue" /> -->
+
+      		<TextView
+      		    android:id="@+id/activity_selectimg_back"
+      		    android:layout_width="wrap_content"
+      		    android:layout_height="wrap_content"
+      		    android:layout_alignParentLeft="true"
+      		    android:layout_centerVertical="true"
+      		    android:layout_marginLeft="10dip"
+      		    android:drawableLeft="@drawable/back_seletor"
+      		    android:text="@string/back"
+      		    android:textColor="@drawable/text_blue"
+      		    android:textSize="@dimen/sixteen" />
+
+      	</RelativeLayout>
+      	
+    
+
+    <RelativeLayout 
+        
+          android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        >
+
+       <com.smt.util.listview.XListView
+            android:id="@+id/friend_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/line"
+            android:headerDividersEnabled="false"
+            android:footerDividersEnabled="true"
+            android:background="#fcfcfc"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+           android:layout_centerInParent="true"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.smt.util.t.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"            
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" />
+   </RelativeLayout>
+
+</LinearLayout>

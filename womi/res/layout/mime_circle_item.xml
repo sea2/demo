@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dip"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" 
+    android:background="#ffffff"
+    >
+   
+   <RelativeLayout         
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dip"
+       android:layout_marginTop="5dip"
+        >
+        
+       <ImageView
+            android:id="@+id/circleiv"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:background="@drawable/tou"
+            android:scaleType="fitXY" />
+    
+  </RelativeLayout>
+  
+   
+   <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="5dip"
+        android:orientation="vertical"   
+       >
+
+     <RelativeLayout 
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:layout_marginTop="10dip"
+                      
+            >   
+             <TextView
+                    android:id="@+id/circlename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:text="茶市在线"
+                    android:textColor="#7888a9"
+                    android:textStyle="bold"
+                    android:textSize="16.0sp" /> 
+                    
+             <ImageView 
+                 
+                    android:id="@+id/biaoshi"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"                   
+                    android:src="@drawable/s_group_icon_praise_green"
+                 
+                 
+                 />
+      
+             
+        </RelativeLayout>
+        
+           <RelativeLayout 
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content"       
+          android:layout_marginTop="10dip"
+         
+                      
+            >  
+            <TextView
+                    android:id="@+id/circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:text="圈友"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" />  
+             <TextView
+                    android:id="@+id/circle_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:layout_toRightOf="@id/circle"  
+                    android:layout_marginLeft="2dip"                 
+                    android:text="5/20"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" /> 
+                 
+              
+             
+             
+              <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_toRightOf="@id/circle_num"  
+                    android:layout_marginLeft="12dip"               
+                    android:text="地点"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" /> 
+               <TextView
+                    android:id="@+id/addresstv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_toRightOf="@id/address"  
+                    android:layout_marginLeft="2dip"               
+                    android:text="湖里区政府"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" />  
+           
+         </RelativeLayout>
+        
+            
+     
+         <RelativeLayout 
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:layout_marginTop="10dip"           
+            >   
+             <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:text="邓紫棋叛逆史：曾自曝床照 大骂胡杏"
+                    android:textColor="#404040"
+                    android:textSize="14.0sp" /> 
+
+        </RelativeLayout>
+     
+        
+     
+     
+   </LinearLayout>
+   
+
+</LinearLayout>

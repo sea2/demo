@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/s_search_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/place"
+            android:textColor="@color/black_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activity_selectimg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/back_seletor"
+            android:text="@string/back"
+            android:textColor="@drawable/text_blue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activity_selectimg_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:text="@string/clear"
+            android:textColor="@drawable/text_blue"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/title_layout"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" >
+
+            <com.amap.api.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.amap.api.maps.MapView>
+
+            <ImageView
+                android:id="@+id/fullscreen"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+				android:background="@drawable/min_screen_seletor"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#50000000" />
+        
+        <RadioGroup
+        android:id="@+id/tab_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_height"
+        android:paddingBottom="0.5dp"
+        android:orientation="horizontal" 
+        android:background="@color/tab_bg1">
+
+        <RadioButton
+            android:id="@+id/radio001"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_poi1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:layout_marginRight="0.5dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#50000000" />
+
+        <RadioButton
+            android:id="@+id/radio002"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_poi2"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginRight="0.5dp"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#50000000" />
+        
+        <RadioButton
+            android:id="@+id/radio003"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_poi3"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginRight="0.5dp"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#50000000" />
+        <RadioButton
+            android:id="@+id/radio004"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_poi4"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="17sp" />
+    </RadioGroup>
+    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#50000000" />
+        
+        <ListView
+            android:id="@+id/listView_place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="2">
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smt.chashizaixian"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 获取通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- shareSDk注册权限 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Anim_style2" >
+
+        <!-- 高德地图配置 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b1278275ff20c689b7a061ef685325b6" />
+
+        <activity
+            android:name="com.smt.chashizaixian.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.Activity01"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.ProductDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.GetPicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.PublishedActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.PhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.ImageGridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.StartActivityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.ContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.CircleDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.LocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimeWeiCircle"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.InfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.InfoSearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimeGroupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimePageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.StartChattingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.RadarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.CirclePlaceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.CircleInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.CircleMemberActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.CircleMemberInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.CircleDetailSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.CaptureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.BarCodeCardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.QRHttpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStylemid" />
+        <activity
+            android:name="com.smt.chashizaixian.IsHttpDialog"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.smt.chashizaixian.MimeDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.UpdateSignatureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.provinceList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.cityList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.NearbyCircleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.CategorySearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MyCircleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MyCircleGroupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.NearbyPeopleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimePhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimeInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimeGroupContentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimeActivityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 聊天列表Activity -->
+        <activity
+            android:name="com.smt.chashizaixian.MessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimeSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.CreateCircleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.WriteCircleIntroductionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.ChoosePlaceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimePhotoDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimeAlbumDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.MimeNewFriendsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.AddFriendsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    
+        <activity
+            android:name="com.smt.chashizaixian.RegistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.SearchUserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.AddFromContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.GetAuthCodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.WriteRegistMsgActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.GetPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.ResetStep1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.smt.chashizaixian.ResetStep2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

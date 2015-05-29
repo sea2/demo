@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_transparent" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff495a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <TextView             
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dip"
+          android:layout_marginTop="15dip"
+          android:text="分享到" 
+          android:textColor="#000"
+          android:textSize="18sp"             
+            />     
+            
+            
+         <LinearLayout              
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginBottom="10dip"  
+             >
+           
+          <TextView 
+              android:id="@+id/share_01"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dip"
+          android:layout_marginTop="15dip"
+          android:drawableTop="@drawable/v1_7_webview_share_friend_nor"
+          android:gravity="center"
+          android:text="好友" 
+          android:textColor="#000"
+          android:textSize="16sp"  
+             
+             />
+             
+          <TextView  
+              android:id="@+id/share_02"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dip"
+          android:layout_marginTop="15dip"
+          android:drawableTop="@drawable/v1_7_webview_share_group_nor"
+          android:gravity="center"
+          android:text="群组" 
+          android:textColor="#000"
+          android:textSize="16sp"  
+             
+             />
+          <TextView  
+              android:id="@+id/share_03"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dip"
+          android:layout_marginTop="15dip"
+          android:drawableTop="@drawable/v1_7_webview_share_circle_nor"
+          android:gravity="center"
+          android:text="微米圈" 
+          android:textColor="#000"
+          android:textSize="16sp"  
+             
+             />
+             
+         </LinearLayout>
+        
+        
+        
+        
+        
+            
+            
+        </LinearLayout>
+
+        <TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <TextView             
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dip"
+          android:layout_marginTop="15dip"
+          android:text="操作" 
+          android:textColor="#000"
+          android:textSize="18sp"             
+            />     
+            
+            
+         <LinearLayout              
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginBottom="10dip"  
+             >
+           
+          <TextView 
+              android:id="@+id/delete"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dip"
+          android:layout_marginTop="15dip"
+          android:drawableTop="@drawable/delete_seletor"
+          android:gravity="center"
+          android:text="删除" 
+          android:textColor="#000"
+          android:textSize="16sp"  
+             
+             />
+              
+            
+      </LinearLayout>
+      </LinearLayout>      
+            
+          
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f3f3f3" />
+
+        <Button
+            android:id="@+id/item_pd_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_nobgd"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="取消" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/circle_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tab_selector" >
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/s_search_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/mime_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="@string/back"
+            android:textColor="@drawable/text_blue"
+             android:textSize="@dimen/sixteen"
+            android:drawableLeft="@drawable/back_seletor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_toLeftOf="@+id/mime_detail"
+            android:layout_toRightOf="@id/mime_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="圈子名称"
+            android:textColor="@color/black_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mime_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:text="@string/setting"
+            android:textColor="@drawable/text_blue"
+            android:textSize="@dimen/sixteen" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/tab_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:background="#99ededed"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio001"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_color"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="圈闻"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/radio002"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_color"
+            android:button="@null"
+            android:gravity="center"
+            android:text="圈聊"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/radio003"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_color"
+            android:button="@null"
+            android:gravity="center"
+            android:text="活动"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="17sp" />
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateCircleActivity" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/s_search_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/create_circle"
+            android:textColor="@color/black_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activity_selectimg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/back_seletor"
+            android:text="@string/back"
+            android:textColor="@drawable/text_blue"
+            android:textSize="@dimen/sixteen" />
+
+        <TextView
+            android:id="@+id/see_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:text="@string/see_circle"
+            android:textColor="@drawable/text_blue"
+            android:textSize="@dimen/sixteen" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:layout_margin="@dimen/jianju2"
+        android:padding="@dimen/jianju2" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/circle_name"
+            android:textSize="@dimen/sixteen" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入群名称"
+            android:singleLine="true"
+            android:textSize="@dimen/sixteen" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="@dimen/tou_weight_height"
+        android:layout_marginBottom="@dimen/padding_right"
+        android:textSize="@dimen/sixteen" 
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tou_weight_height4"
+            android:paddingLeft="@dimen/jianju2"
+            android:layout_marginTop="@dimen/jianju"
+            android:checked="true"
+            android:button="@drawable/radio_btn"
+            android:singleLine="true"
+            android:textSize="@dimen/sixteen" 
+            android:text="@string/cate_circle" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tou_weight_height4"
+            android:paddingLeft="@dimen/jianju2"
+            android:button="@drawable/radio_btn"
+            android:singleLine="true"
+            android:text="@string/secret_circle" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_step_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tou_weight_height6"
+        android:layout_margin="@dimen/jianju2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/radioGroup1"
+        android:background="@drawable/choose_seletor"
+        android:textColor="@color/white"
+        android:text="@string/next_step" />
+
+</RelativeLayout>

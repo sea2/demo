@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/info_head"
+        android:layout_width="@dimen/tou_weight_height2"
+        android:layout_height="@dimen/tou_weight_height2"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/jianju2"
+        android:src="@drawable/tou" />
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/info_head"
+        android:layout_toRightOf="@+id/info_head"
+        android:text="群组名称"
+        android:textColor="@color/setting_color1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/group_name"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/group_icon_gray"
+        android:text="85/100" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/info_head"
+        android:layout_toRightOf="@+id/info_head"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:gravity="bottom"
+        android:text="接近岭兜二里，各种都有，360航行行出状元" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginLeft="@dimen/jianju2"
+        android:drawableLeft="@drawable/group_icon_location"
+        android:text="金山小区" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radar_bg"
+>
+
+    <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="200dip" 
+       android:layout_alignParentBottom="true" 
+        >
+ 
+        
+       <TextView
+        android:id="@+id/xx_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:singleLine="true" 
+        android:layout_centerHorizontal="true"       
+        android:text="按住按钮邀请身边同时按住的人"
+        android:layout_above="@+id/radar_btn"
+        android:textSize="14sp"     
+        android:textColor="#fff" />  
+        
+        
+   <Button   
+    android:id="@+id/radar_btn"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radar_btn_hover"   
+    android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true" 
+    android:layout_marginBottom="20dip" 
+   
+ 
+       />
+   
+   
+     <Button    
+    android:id="@+id/radar_back"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:background="@drawable/black_btn_seletor"   
+    android:layout_alignParentBottom="true" 
+    android:layout_marginBottom="30dip" 
+    android:text="退出"
+    android:textColor="#fff"
+       />
+     
+     <LinearLayout 
+    android:id="@+id/rotation_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"   
+    android:layout_alignParentBottom="true"     
+    android:orientation="horizontal" 
+    android:visibility="gone"   
+         >
+     <ImageView 
+    android:id="@+id/radar_rotation"    
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"  
+    android:src="@drawable/radar_rotation"
+      android:layout_marginBottom="70dip" 
+    android:layout_weight="1.0"
+  
+        />
+     
+     <ImageView 
+    android:id="@+id/ttt"    
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"  
+    android:layout_weight="1.0"
+  
+        />
+     
+     
+     
+    </LinearLayout>
+    
+     
+     
+    </RelativeLayout>
+    
+    
+  
+    
+    </RelativeLayout>
+    
+    
+    
+   
+

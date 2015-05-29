@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+            
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fff"         
+                     
+             >
+                    
+               
+            <ImageView
+                android:id="@+id/choose_chatting_head"
+                android:layout_width="45dp"
+		        android:layout_height="45dp" 			         
+		        android:layout_marginLeft="10dip"		        
+		        android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" 	                    
+                android:src="@drawable/tou" />
+            
+               
+            
+            
+          
+            
+            <RelativeLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"  
+               android:layout_toRightOf="@id/choose_chatting_head"
+               android:layout_marginLeft="10dip"
+               android:layout_marginTop="10dip"         
+               android:layout_centerVertical="true"
+                >
+            
+
+            <TextView
+                android:id="@+id/choose_chatting_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                                              
+                android:textSize="16sp"
+                android:text="古天乐"
+                android:textColor="#000" />
+           
+             <TextView
+                 android:id="@+id/choose_chatting_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dip" 
+                android:layout_marginTop="5dip" 
+                android:layout_below="@+id/choose_chatting_name"
+                android:layout_marginBottom="5dip"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:text="春天的雨，夏天的风..."
+                android:textColor="#666" />
+             </RelativeLayout>
+            
+
+            <CheckBox
+            android:id="@+id/choose_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:background="@null"
+            android:button="@null"        
+            android:drawableLeft="@drawable/checkbox_bg"
+            android:drawablePadding="4.0dip"
+              />
+            
+            
+        </RelativeLayout>
+        
+        
+          
+        
+
+ </LinearLayout>

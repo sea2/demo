@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+>
+    
+      <LinearLayout 
+     android:id="@+id/new_layout"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+        >
+        
+          
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/s_search_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新的朋友"
+            android:textColor="@color/black_color"
+            android:textSize="20sp" />
+       
+      
+        <TextView
+            android:id="@+id/activity_new_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_seletor"
+            android:text="@string/back"
+            android:textColor="@drawable/text_blue"
+             android:textSize="@dimen/sixteen"
+         />
+         
+        <TextView
+            android:id="@+id/mime_new_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:text="@string/setting"
+            android:textColor="@drawable/text_blue"
+             android:textSize="@dimen/sixteen"
+            />
+          
+          
+              
+    </RelativeLayout>  
+         
+           <ImageView 
+              
+             android:layout_width="fill_parent"
+             android:layout_height="1dip"    
+             android:background="@drawable/line"
+              
+              />
+   
+        
+         
+            <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" >
+        
+           <ImageView 
+              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"    
+             android:background="@drawable/no_new_frient"
+              
+              />
+        
+                
+                
+                
+        </RelativeLayout>  
+      
+           
+           
+           
+           
+    </LinearLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="72dip"
+    android:background="#f2f2f2" 
+    android:orientation="horizontal" >
+            
+  
+         
+            <ImageView
+                android:id="@+id/searchuser_head"
+                android:layout_width="60dp"
+		        android:layout_height="60dp"
+		        android:layout_marginLeft="10dip"
+		        android:layout_gravity="center_vertical"
+                android:src="@drawable/tou" />
+
+            <TextView
+                android:id="@+id/searchuser_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="6dip"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="古天乐"
+                android:textColor="#000" />
+         
+            
+            
+      
+
+ </LinearLayout>

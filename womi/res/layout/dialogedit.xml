@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+            
+        
+    <EditText
+        android:id="@+id/content_ett"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:maxHeight="60dip"
+        android:minHeight="40dip"
+        android:paddingLeft="5dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:hint="添加好友附言" 
+        android:background="@drawable/edit_bg" 
+        android:textSize="16sp"
+        android:textColor="#000"
+         
+        >
+    </EditText>   
+        
+          
+        
+
+ </LinearLayout>

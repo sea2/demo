@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        >
+
+       <LinearLayout
+        	android:id="@+id/more_layout"
+        	android:layout_width="fill_parent"
+        	android:layout_height="60dip"
+            android:layout_centerInParent="true"
+        	android:orientation="vertical"
+        	android:background="@drawable/market_detail_pic_bg" >
+
+         
+        <RelativeLayout 
+         android:id="@+id/qr_card_rl"
+         android:layout_width="fill_parent"
+         android:layout_height="60dip"                 
+            >
+         <TextView 
+             
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"   
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="12dip"
+         android:text="我的二维码名片"
+         android:textColor="#000"
+         android:textSize="20sp"
+             />  
+            
+        </RelativeLayout>   
+             
+       
+       </LinearLayout>
+
+   
+</RelativeLayout>

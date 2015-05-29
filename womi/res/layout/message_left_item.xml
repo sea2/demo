@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/frame_head"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/friend_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@+id/friend_image"
+            android:background="@drawable/chat_text_feed_left_bg_hover"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/friend_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip"
+                android:text="茶市在线团队,欢迎入您好，我是茶市在线团队,欢迎入您好，我是茶市在线团队,欢迎入"
+                android:textColor="@color/black_color"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mime_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/s_search_bg"
+        android:paddingLeft="@dimen/space_tab_l_r"
+        android:paddingRight="@dimen/space_tab_l_r"
+        android:paddingBottom="5dip"
+        android:paddingTop="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/mime_space_product"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/whisper_btn_bg_all_hover" >
+
+            <TextView
+                android:id="@+id/mime_tv_product"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/space_tv_product"
+                android:textColor="@color/lightwhite"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mime_space_special"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1.0"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/mime_tv_special"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/space_tv_special"
+                android:textColor="@color/black_color"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/spaceframe"
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mime_lay"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mime_lay" >
+
+    </FrameLayout>
+
+</RelativeLayout>

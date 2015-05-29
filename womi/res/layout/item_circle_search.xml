@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2" 
+    android:orientation="vertical" >
+            
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+             
+                     
+             >
+            <FrameLayout 
+                android:id="@+id/frame_head"
+                android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:layout_marginLeft="10dip"		        
+		        android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"                 
+                >
+            <ImageView
+                android:id="@+id/info_head"
+                android:layout_width="@dimen/tou_weight_height4"
+		        android:layout_height="@dimen/tou_weight_height4" 		                    
+                android:src="@drawable/ic_discover_group_category" />
+            
+            
+            
+            
+            </FrameLayout>
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/frame_head"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/frame_head"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/frame_head" >
+
+                <TextView
+                    android:id="@+id/info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="情感交流，开心"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/info_last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/imageView1"
+                    android:maxLength="18"
+                    android:singleLine="true"
+                    android:text="风花雪月激情四射的年代里，一群二货们"
+                    android:textColor="#666" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/info_last"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/jianju2"
+                    android:src="@drawable/mm_submenu_normal" />
+
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+        
+          
+        
+
+ </LinearLayout>

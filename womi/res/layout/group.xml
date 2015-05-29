@@ -1,0 +1,403 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+>
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/s_search_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="群组"
+            android:textColor="@color/black_color"
+            android:textSize="20sp" />
+
+             <TextView
+                android:id="@+id/info_more" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:textColor="@drawable/text_blue"
+                android:textSize="@dimen/sixteen"
+                android:text="@string/makegroup" />
+      
+    </RelativeLayout> 
+    
+   
+        <LinearLayout 
+            
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+          android:layout_marginTop="15dip"      
+        android:background="@drawable/usermainpage_bg_center" 
+        android:orientation="vertical"  
+            >
+    
+          <RelativeLayout
+        android:id="@+id/group_layout_01"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+      
+      
+        >
+          <ImageView
+            android:id="@+id/group_img_01"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/ic_discover_nearby_group"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/group_img_01" 
+        android:text="附近群组"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_01"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+          
+          <ImageView 
+              
+             android:layout_width="fill_parent"
+             android:layout_height="1dip"    
+             android:background="@drawable/line"
+             android:layout_marginLeft="60dip" 
+              
+              />
+          
+          
+          <RelativeLayout
+        android:id="@+id/group_layout_02"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+      
+      
+        >
+          <ImageView
+            android:id="@+id/group_img_02"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/ic_discover_group_category"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/group_img_02" 
+        android:text="分类搜索"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_02"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+   
+ </LinearLayout>
+   
+   
+    
+    <LinearLayout 
+            
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+          android:layout_marginTop="15dip"      
+        android:background="@drawable/usermainpage_bg_center" 
+        android:orientation="vertical"  
+            >
+    
+          <RelativeLayout
+        android:id="@+id/group_layout_03"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+      
+      
+        >
+          <ImageView
+            android:id="@+id/group_img_03"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/v1_7_ic_contact_my_group"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/group_img_03" 
+        android:text="我的群组"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_03"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+          
+          <ImageView 
+              
+             android:layout_width="fill_parent"
+             android:layout_height="1dip"    
+             android:background="@drawable/line"
+             android:layout_marginLeft="60dip" 
+              
+              />
+          
+          
+          <RelativeLayout
+        android:id="@+id/group_layout_04"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+      
+      
+        >
+          <ImageView
+            android:id="@+id/group_img_04"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/ic_discover_my_groupunion"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/group_img_04" 
+        android:text="我的群联盟"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_04"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+   
+ </LinearLayout> 
+    
+    
+     <RelativeLayout
+        android:id="@+id/group_layout_05"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+          android:layout_marginTop="15dip"      
+        android:background="@drawable/usermainpage_bg_center" 
+      
+        >
+          <ImageView
+            android:id="@+id/group_img_05"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/ic_discover_nearby_personal"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/group_img_05" 
+        android:text="附近的人"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_05"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+    
+    
+    
+     <LinearLayout 
+            
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+          android:layout_marginTop="15dip"      
+        android:background="@drawable/usermainpage_bg_center" 
+        android:orientation="vertical"  
+            >
+    
+          <RelativeLayout
+        android:id="@+id/group_layout_06"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+      
+      
+        >
+          <ImageView
+            android:id="@+id/group_img_06"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/ic_discover_radar_add_friend"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/group_img_06" 
+        android:text="雷达加人"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_06"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+          
+          <ImageView 
+              
+             android:layout_width="fill_parent"
+             android:layout_height="1dip"    
+             android:background="@drawable/line"
+             android:layout_marginLeft="60dip" 
+              
+              />
+          
+          
+          <RelativeLayout
+        android:id="@+id/group_layout_07"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+      
+      
+        >
+          <ImageView
+            android:id="@+id/group_img_07"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/ic_discover_scan_qcode"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/group_img_07" 
+        android:text="扫描二维码"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_07"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+   
+ </LinearLayout> 
+    
+    
+    
+   
+</LinearLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" 
+    android:background="#ffffff"
+    >
+   
+   <RelativeLayout         
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dip"
+       android:layout_marginTop="5dip"
+        >
+        
+       <ImageView
+            android:id="@+id/iv"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@drawable/tou"
+            android:scaleType="fitXY" />
+    
+  </RelativeLayout>
+  
+   
+   <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="10dip"
+        android:orientation="vertical"   
+       >
+
+     <RelativeLayout 
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:layout_marginTop="5dip"
+                      
+            >   
+             <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:text="茶市在线"
+                    android:textColor="#7888a9"
+                    android:textStyle="bold"
+                    android:textSize="18.0sp" /> 
+                    
+               <TextView
+                    android:id="@+id/contenttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"   
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dip"                
+                    android:text="am 11:30"
+                    android:textColor="@color/gray"
+                    android:textSize="16.0sp" /> 
+      
+             
+        </RelativeLayout>
+        
+     
+     
+         <RelativeLayout 
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:layout_marginTop="15dip"
+                      
+            >   
+             <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:text="邓紫棋叛逆史：曾自曝床照 大骂胡杏儿吴卓羲邓丽欣"
+                    android:textColor="#404040"
+                    android:textSize="16.0sp" /> 
+                    
+             
+      
+             
+        </RelativeLayout>
+     
+          <LinearLayout 
+                
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:layout_marginTop="5dip" 
+           android:orientation="vertical"
+           android:background="#e6e6e6"           
+                
+                >
+     
+         <RelativeLayout 
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:layout_marginTop="10dip"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+         
+            > 
+           
+            
+              <ImageView
+            android:id="@+id/share_img"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:background="@drawable/tou"
+            android:scaleType="fitXY" />
+             
+             
+               <TextView
+                    android:id="@+id/share_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  
+                    android:layout_toRightOf="@id/share_img" 
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"                
+                    android:text="随着《歌手》的热播，邓紫棋迅速在内地走红，据了解她的粉丝透露"
+                    android:textColor="#404040"
+                    android:textSize="16.0sp" /> 
+
+        </RelativeLayout>
+        
+         
+           <RelativeLayout 
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:layout_marginTop="8dip"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:layout_marginBottom="5dip"
+                      
+            >  
+            <TextView
+                    android:id="@+id/from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:text="来自"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" />  
+             <TextView
+                    android:id="@+id/circlefrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_toRightOf="@id/from"                   
+                    android:text="创业圈"
+                    android:textColor="#7888a9"
+                    android:textSize="14.0sp" /> 
+                    
+               <TextView
+                    android:id="@+id/circlename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_toRightOf="@id/circlefrom"  
+                    android:layout_marginLeft="5dip"               
+                    android:text="我爱我茶"
+                    android:textColor="#7888a9"
+                    android:textSize="14.0sp" /> 
+      
+             
+        </RelativeLayout>
+
+     </LinearLayout>
+     
+          <LinearLayout
+         android:id="@+id/image_container" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:orientation="vertical"
+        >
+           
+        </LinearLayout>
+          
+          
+        <FrameLayout 
+           android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+                 android:layout_marginTop="12dip"     
+            >
+          
+            <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+              
+            >  
+ 
+           <RelativeLayout 
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:layout_centerVertical="true"
+           android:layout_toLeftOf="@+id/comment_good_iv"
+           android:layout_marginRight="10dip"
+         
+                      
+            >  
+            <TextView
+                    android:id="@+id/good_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:text="19"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" />  
+             <TextView
+                    android:id="@+id/good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:layout_toRightOf="@id/good_num"  
+                    android:layout_marginLeft="2dip"                 
+                    android:text="赞"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" /> 
+                 
+                
+             
+             
+              <TextView
+                    android:id="@+id/comment_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_toRightOf="@id/good"  
+                    android:layout_marginLeft="2dip"               
+                    android:text="36"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" /> 
+               <TextView
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_toRightOf="@id/comment_num"  
+                    android:layout_marginLeft="2dip"               
+                    android:text="评论"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" />  
+           
+         </RelativeLayout> 
+
+             <ImageView
+            android:id="@+id/comment_good_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/feed_more"
+            android:scaleType="fitXY" />
+             
+        </RelativeLayout> 
+        
+         <RelativeLayout  
+            android:id="@+id/comgoodhandle"  
+            android:layout_width="fill_parent"  
+            android:layout_height="30dip" 
+            android:layout_marginRight="32dip"
+            android:visibility="gone"
+            >
+             
+            <RelativeLayout 
+                 android:id="@+id/cgood_rl"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+               android:layout_alignParentRight="true"    
+                
+                >
+             
+             
+            <ImageView  
+                android:id="@+id/good_img"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                 android:layout_centerVertical="true"  
+                android:scaleType="fitXY"  
+                android:src="@drawable/good_seletor" 
+               
+                />  
+            <ImageView  
+                android:id="@+id/comment_img"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"              
+                android:layout_centerVertical="true" 
+                android:layout_toRightOf="@id/good_img" 
+                android:scaleType="fitXY" 
+                android:src="@drawable/comment_seletor"
+               
+          />
+            </RelativeLayout> 
+        </RelativeLayout>     
+           </FrameLayout> 
+     
+     
+        
+           
+              
+            
+           <RelativeLayout 
+            android:layout_width="fill_parent"
+           android:layout_height="40dip" 
+           android:layout_marginTop="15dip"
+           android:background="#e6e6e6"
+            > 
+           
+            
+              <ImageView
+            android:id="@+id/share_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/s_msg_icon_praise"
+            android:scaleType="fitXY" />
+             
+             
+               <TextView
+                    android:id="@+id/share_names"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  
+                    android:layout_toRightOf="@id/share_heart" 
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"                
+                    android:text="茶市在线,Arcc"
+                    android:textColor="#7888a9"
+                    android:textSize="13.0sp" /> 
+
+        </RelativeLayout>    
+            
+          <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line"
+            />
+          
+          
+           <LinearLayout 
+            android:id="@+id/comment_container" 
+            android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:background="#e6e6e6"
+           android:orientation="vertical"
+            > 
+
+               <TextView
+                    android:id="@+id/comment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dip"                    
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"  
+                    android:gravity="center"              
+                    android:text="邻居的耳朵:是我是歌手的邓紫棋吗？？？"
+                    android:textColor="#7888a9"
+                    android:textSize="16.0sp" />
+               
+               <TextView
+                    android:id="@+id/comment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dip"                    
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"  
+                    android:gravity="center"              
+                    android:text="茶市在线回复邻居的耳朵:是啊"
+                    android:textColor="#7888a9"
+                    android:textSize="16.0sp" />
+
+      </LinearLayout>   
+     
+     
+     
+   </LinearLayout>
+   
+
+</LinearLayout>
