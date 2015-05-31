@@ -29,6 +29,7 @@ public class DistrictActivity extends Activity implements
 	//当前选中的级别
 	private String selectedLevel = DistrictSearchQuery.KEYWORDS_COUNTRY;
 	private int int2;
+	private int int1;
 	// 当前行政区划
 	private DistrictItem currentDistrictItem = null;
 
