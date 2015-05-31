@@ -46,12 +46,16 @@ import com.doubletuan.wing.view.FeatureView;
 /**
  * AMapV2地图demo总汇
  */
+/**
+ * @author lhy
+ *
+ */
 public final class MainActivity extends ListActivity {
 	private static class DemoDetails {
 		private final int titleId;
 		private final int descriptionId;
 		private final Class<? extends android.app.Activity> activityClass;
-
+private int int1;
 		public DemoDetails(int titleId, int descriptionId,
 				Class<? extends android.app.Activity> activityClass) {
 			super();
