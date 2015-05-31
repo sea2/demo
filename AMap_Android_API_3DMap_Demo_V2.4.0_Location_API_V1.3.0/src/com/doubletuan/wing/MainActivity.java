@@ -56,6 +56,7 @@ public final class MainActivity extends ListActivity {
 		private final int descriptionId;
 		private final Class<? extends android.app.Activity> activityClass;
 private int int1;
+private int int3;
 		public DemoDetails(int titleId, int descriptionId,
 				Class<? extends android.app.Activity> activityClass) {
 			super();
